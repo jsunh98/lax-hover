@@ -7,11 +7,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #222;
+    background: url(images/4vipers.jpg) center/cover no-repeat;
     min-height: 100vh;
+    
+}
+.overlay {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.69);
 }
 .container {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +35,19 @@ body {
     background: var(--img);
     background-size: 450px;
     background-position: center;
-    background-repeat: no-repeat;
     cursor: pointer;
     transition: 0.2s;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    
+}
+.container .card h2 {
+    background: #fff;
+    color: #222;
+    padding: 5px 20px;
+    font-size: 2em;
+    text-transform: uppercase;
 }
